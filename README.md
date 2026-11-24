@@ -70,6 +70,21 @@ I used `Admission grade` and `Previous qualification (grade)` because they are c
 
 ## Quick start (runs locally with no accounts)
 
+**Prerequisites**
+
+- [Git](https://git-scm.com/downloads), to clone the repository
+- An internet connection, because `prepare_data.py` downloads the raw dataset from the cloud
+- [uv](https://docs.astral.sh/uv/), which manages Python and all dependencies (you do not install Python or packages separately; `uv sync` handles both)
+- Docker, only for the Docker section, and the Google Cloud CLI, only for the deploy section
+
+Install uv on macOS or Linux:
+```
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+Install uv on Windows (PowerShell):
+```
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+
 1. Install [uv](https://docs.astral.sh/uv/). It also installs a compatible Python if needed.
 2. Clone and install the locked dependencies:
    ```
