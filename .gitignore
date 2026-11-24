@@ -1,0 +1,21 @@
+# AI helped generate this code
+
+# Python cache and local environment
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Local MLflow files
+mlflow.db*
+mlruns/
+
+# Generated files
+student_model.joblib
+students_clean.csv
+
+# VS Code settings
+.vscode/
+
+#raw file
+data.csv
