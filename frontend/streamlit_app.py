@@ -27,7 +27,7 @@ if st.button("Predict"):
     api_url = "https://student-api-786379901597.us-central1.run.app/predict"
 
     try:
-        response = requests.post(api_url, json=grades, timeout=30)
+        response = requests.post(api_url, json=grades, timeout=90)
         response.raise_for_status()
         prediction = response.json()["prediction"]
         st.success(f"Predicted outcome: {prediction}")
