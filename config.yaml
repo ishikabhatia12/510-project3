@@ -1,0 +1,28 @@
+# AI helped generate this code
+
+# Cloud location of the raw UCI dataset, which uses semicolons between columns
+raw_data_url: "https://sazcqemdgbppazdvowmc.supabase.co/storage/v1/object/public/student-data/data.csv"
+
+# Local path where the cleaned dataset is saved and read from
+clean_data_path: "students_clean.csv"
+
+# Share of rows held out for tuning, about 664 students
+validation_size: 0.15
+
+# Share of rows held out for the final check, leaving 70 percent for training
+test_size: 0.15
+
+# Fixed seed so the split is identical every run
+random_state: 42
+
+# Upper limit on tries for the model to settle, high enough to avoid convergence warnings
+max_iter: 1000
+
+# Local MLflow experiment name, used when no cloud settings are provided
+mlflow_experiment: "student-outcome-prediction"
+
+# Local registered model name, used when no cloud settings are provided
+registered_model_name: "student_outcome_model"
+
+# Minimum confidence needed to return a prediction; below it the API answers "uncertain"
+confidence_threshold: 0.4
