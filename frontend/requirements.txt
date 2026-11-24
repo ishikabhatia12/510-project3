@@ -1,0 +1,4 @@
+# AI helped generate this code
+
+streamlit
+requests
